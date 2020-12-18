@@ -24,4 +24,18 @@ export class SpotifyService {
 
     return this.http.get(url, { headers });
   }
+
+   searchArtist(query: string) {
+    const url = `https://api.spotify.com/v1/search?q=${query}&type=artist`;
+  const headers = new HttpHeaders({Authorization: environment.oauthToken});
+
+    let obsArtist = this.http.get(url, { headers });
+    return obsArtist;
+  }
+   getArtist(id: string) {
+    const url = `https://api.spotify.com/v1/artists/${id}`;
+    const headers = new HttpHeaders({Authorization: environment.oauthToken});
+
+    return this.http.get(url, { headers });
+  }
 }

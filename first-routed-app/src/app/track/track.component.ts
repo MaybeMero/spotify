@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router, ParamMap } from '@angular/router';
 import { SpotifyService } from '../spotify.service';
 import { Observable } from 'rxjs';
-import {Location} from '@angular/common'
+import {Location} from '@angular/common';
 
 @Component({
   selector: 'app-track',
