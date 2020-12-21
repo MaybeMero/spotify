@@ -23,3 +23,4 @@ describe('ArtistComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+
